@@ -7,13 +7,13 @@ using namespace std;
 void digitalSort(vector<int>& Array) {
     int maxValue = *max_element(Array.begin(), Array.end());
 
-    for( int exp = 1; maxValue / exp > 0; exp *= 10) {
+    for( int x = 1; maxValue / x > 0; x *= 10) {
         vector<int> output(Array.size());
 
         int count[10] = {0};
 
         for (int i  = 0; i < Array.size(); i++) {
-            count[(Array[i] / exp) % 10]++;
+            count[(Array[i] / x) % 10]++;
         } 
 
         for (int i = 1; i < 10; i++) {
@@ -21,8 +21,8 @@ void digitalSort(vector<int>& Array) {
         }
 
         for (int i = Array.size() - 1; i >= 0; i--) {
-            output[count[(Array[i] / exp) % 10] - 1] = Array[i];
-            count[(Array[i] / exp) % 10]--;
+            output[count[(Array[i] / x) % 10] - 1] = Array[i];
+            count[(Array[i] / x) % 10]--;
         }
 
         for (int i = 0; i < Array.size(); i++) {
