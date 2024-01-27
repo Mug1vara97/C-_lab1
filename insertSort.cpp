@@ -4,7 +4,7 @@
 using namespace std;
 
 void insertSort(vector<int>& Array) {
-//определение размера вектораcd 
+//определение размера вектора
     int n = Array.size();
     for ( int i = 1; i < n; i++ ) {
         int key = Array[i];
