@@ -18,4 +18,20 @@
 
 - Визуализвция:  
   ![bubble sort](https://www.resultswebdev.com/wp-content/themes/results-website-design/uploads/bubble-sort-animation2.gif)
-
+- Реализация: 
+```cpp
+void bubbleSort(vector<double>& Array) {
+    int n = Array.size();
+    for (int i = 0; i < n - 1; i++ ) {
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (Array[j] > Array[j + 1]) {
+                swap(Array[j], Array[j + 1]);
+            }
+        }
+    }
+}
+```
+- Время работы:  
+Лучшее:O(n)  
+Среднее:O(n^2)  
+Худщее:O(n^2)
