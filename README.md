@@ -17,5 +17,5 @@
 2.Неэффективность при частично отсортированных массивах - пузырьковая сортировка неэффективна при частично отсортированных массивах, так как она всегда проходит по всем элементам, даже если массив уже отсортирован.
 
 - Визуализвция:  
-  ![bubble sort](https://avatars.dzeninfra.ru/get-zen_doc/245342/pub_5aad484755876b37fbba2c5a_5aad499b4bf16117a1925aef/orig)
+  ![bubble sort](https://www.resultswebdev.com/wp-content/themes/results-website-design/uploads/bubble-sort-animation2.gif)
 
